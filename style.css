@@ -1,0 +1,115 @@
+/* Add your custom styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .moving-emoji {
+    display: inline-block;
+    animation: moveEmoji 2s infinite alternate;
+  }
+  
+  @keyframes moveEmoji {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #FFB6C1; /* Light pink color */
+  }
+  
+  header a.navbar-brand {
+    color: #333; /* Dark text color */
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333; /* Dark text color */
+  }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  .section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .animated-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+  }
+
+
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .job-info {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .education-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Adjust size as needed */
+    margin-right: 20px; /* Adjust spacing as needed */
+  }
+  
+  .details {
+    animation: slideIn 1s ease-in-out; /* Animation */
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+    
+  
+
+
+
+  
+  
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
