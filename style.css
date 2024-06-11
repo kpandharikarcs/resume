@@ -1,115 +1,223 @@
 /* Add your custom styles here */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6ffe6;
+}
+
+.moving-emoji {
+  display: inline-block;
+  animation: moveEmoji 1s infinite alternate;
+}
+
+@keyframes moveEmoji {
+  from {
+    transform: translateY(0);
   }
-  .moving-emoji {
-    display: inline-block;
-    animation: moveEmoji 2s infinite alternate;
+  to {
+    transform: translateY(-10px);
   }
-  
-  @keyframes moveEmoji {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-10px);
-    }
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  header {
-    background-color: #FFB6C1; /* Light pink color */
-  }
-  
-  header a.navbar-brand {
-    color: #333; /* Dark text color */
-    font-weight: bold;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #333; /* Dark text color */
-  }
-  
-  .section {
-    padding: 50px 0;
-  }
-  
-  .section h2 {
-    margin-bottom: 20px;
-  }
-  
-  .animated-text {
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #070564;
+}
+
+header a.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.fixed-header {
+  background-color: #333; /* Change this to the desired background color */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a slight shadow for better visibility */
+}
+
+.navbar {
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.nav-link {
+  color: white !important; /* Ensure all links have white color initially */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #e43586 !important; /* Change this to the desired hover color */
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
   }
+  to {
+    opacity: 1;
+  }
+}
 
+.logo {
+  width: 150px;
+  height: auto;
+  margin-right: auto;
+}
 
-  .hidden {
-    display: none;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  .job-info {
-    animation: fadeIn 0.5s ease-in-out;
-  }
-  
-  .education-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .logo {
-    width: 100px; /* Adjust size as needed */
-    height: auto; /* Adjust size as needed */
-    margin-right: 20px; /* Adjust spacing as needed */
-  }
-  
-  .details {
-    animation: slideIn 1s ease-in-out; /* Animation */
-  }
-  
-  @keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-    
-  
+.card-body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.card-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
 
+.education-grid {
+  display: flex;
+  justify-content: space-between;
+}
 
-  
-  
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+.boxedu {
+  flex: 1;
+  padding: 20px;
+  border: 0;
+  text-align: center;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    flex-direction: column;
   }
-  
+}
+
+.airplane-gif {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.box img {
+  width: 140px;
+  height: 140px;
+}
+
+.social-media-div .icon-button {
+  margin-right: 10px;
+  display: inline-flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 50px; /* Increase the size */
+  height: 50px; /* Increase the size */
+  border-radius: 50%;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-media-div .icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Add a slight background color on hover */
+}
+
+.social-media-div .icon-button i {
+  font-size: 24px; /* Increase the icon size */
+}
+
+.social-media-div .icon-button .fa-linkedin-in {
+  color: #0077b5; /* LinkedIn brand color */
+}
+
+.social-media-div .icon-button .fa-google {
+  color: #db4437; /* Google brand color */
+}
+
+.social-media-div .icon-button .fa-instagram {
+  color: #e4405f; /* Instagram brand color */
+}
+
+.certificates-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.certificates {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px; /* Adjust as needed */
+  width: 100%;
+}
+
+.certificate {
+  width: 48%; /* Adjust width as needed */
+}
+
+.certificate img {
+  width: 100%; /* Make the image fill the container */
+  max-width: 200px; /* Limit the width of the image */
+}
+
+.contact-gif {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.why-work {
+  font-family: 'Boogaloo', sans-serif; /* Change 'Roboto' to your desired font from Google Fonts */
+  font-weight: bold; /* Optionally make the text bold */
+  font-size: 36px; /* Optionally adjust the font size */
+}
+
+.why-work2 {
+  font-family: 'Roboto', sans-serif; /* Change 'Roboto' to your desired font from Google Fonts */
+  font-size: 20px; /* Optionally adjust the font size */
+  text-align: justify;
+}

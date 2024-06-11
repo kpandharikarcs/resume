@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Kalyani here!</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap">
+
+
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 
@@ -14,14 +21,12 @@
       var map = document.getElementById(mapId);
       map.classList.toggle('hidden');
     }
-
-    
   </script>
   
   <style>
     /* Custom styles */
     .navbar {
-      background-color: #FFB6C1; /* Light pink color */
+      background-color: #08137a; /* Light pink color */
     }
 
     .nav-link {
@@ -31,10 +36,10 @@
 
 </head>
 <body>
-  <header>
+  <header class="fixed-header">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio</a>
+        <a class="navbar-brand" href="#" style="color: white;">Kalyani here!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,6 +58,9 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#skills-certifications">Skills and Certification</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -60,178 +68,312 @@
       </div>
     </nav>
   </header>
-
-
-
+  
+  
   <main>
-    <section id="about" class="section">
+    <section id="about" class="section" >
       <div class="container">
-        <h2><center> Welcome! Dive in with a big smile! <span class="moving-emoji">😊 </span></center></h2>
+        <p></p>
+        <h2 style="margin-top: 60px;"><center> <strong><span class="moving-emoji">😊Welcome! Dive in with a big smile!😊 </strong></span></center></h2>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container">
+    <section id="about-me" class="section" > <!-- Changed ID to #about-me -->
+      <div class="container sr">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="133548989855171367.jpg" alt="Your Photo" class="img-fluid rounded-circle mb-4">
+            <img src="kk.jpg" alt="Your Photo" class="img-fluid rounded-circle mb-4 sr">
           </div>
           <div class="col-md-6">
-            <h2>About Me</h2>
-            <p class="animated-text">Welcome to my portfolio website! - I am writing to express my heartfelt interest and gratitude for the incredible opportunity presented by AnitaB.org. As a dedicated master's student majoring in Computer Science at the University of Alabama with a commendable GPA of 3.75, I am deeply passionate about expanding my knowledge and expertise in this modern era. Having previously earned my Bachelor's degree in Computer Science, I am driven by a desire to continuously learn and contribute to advancements that enhance the quality of human life through technology. 
-   
-              With a solid foundation built over 5 years of professional experience as a Software Developer at Tata Consultancy Services and Capgemini in India, I bring a wealth of practical insights and skills to my academic pursuits. My diverse roles have exposed me to a range of technologies, including State Machine Development, Android Development within the automotive domain, & Salesforce Development. I thrive both as a collaborative team member and as an independent contributor, consistently delivering exceptional results.
-              
-            </p>
+            <h2 style="color: rgb(0, 28, 85);"><strong>Who Am I?</strong></h2>
+            <p  class="why-work2">I am Software Developer, Salesforce Developer, Salesforce Administrator, Computer Scientist and last but not the least  <b style="color:palevioletred">a kind human being</b>.I am a dedicated and passionate professional with a strong background in Computer Science. With a keen eye for detail and a drive for excellence, I strive to deliver top-notch results in every project I undertake. I am deeply passionate about technology , constantly seeking opportunities to expand my knowledge and expertise in this area.In the future, I aspire to become good human being along with brilliant software engineer. Whether it's professional or personal life, I am driven to make a positive impact.</p>
+            <p><strong> Why Work With Me?</strong></p>
+            <p class="why-work2"> When you choose to collaborate with me, you're not just getting a skilled professional – you're gaining a dedicated partner who is committed to your success. With a focus on quality, innovation, and continuous improvement, I am ready to take on any challenge and deliver exceptional results.</p>
           </div>
         </div>
       </div>
     </section>
-
-
-    
 
     <section id="experience" class="section">
       <div class="container">
-        <h2>Experience</h2>
+        <h2 class="section-title" style="color: rgb(0, 28, 85);" ><strong>Experience </strong></h2>
         <div class="row">
-          <div class="col-md-6">
-            <div class="company">
-              <img src="tcs.png" alt="TCS Logo" class="company-logo">
-              <p class="tenure">June 2018 - Jan 2022</p>
-              <p class="position">Software Developer</p>
-              <a href="#" class="more-info" onclick="toggleInfo('tcs')">Click here to know more</a>
+          <div class="col-md-4 mb-4 sr">
+            <div class="card">
+              <div class="card-body">
+                <img src="tcs.png" alt="clg1" class="logo3">
+                <h5 class="card-title text-center">Software Developer</h5>
+                <p class="card-text text-center"><small class="text-muted">June 2018 - Decemeber 2020</small></p>
+                <ul class="list-group">
+                  <li class="list-group-item">Analyzed client requirements and identified suitable APIs.</li>
+                  <li class="list-group-item">Developed Connection Manager features for In-Vehicle Infotainment using Android Studio and Java.</li>
+                  <li class="list-group-item">Conducted comprehensive testing, identifying and addressing bugs early in development.</li>
+                  <li class="list-group-item">Participated in Scrum meetings and team discussions.</li>
+                  <li class="list-group-item">Proficient in Git for version control and collaborative development.</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="company">
-              <img src="capgemini.png" alt="Capgemini Logo" class="company-logo">
-              <p class="tenure">Jan 2022 - Aug 2023</p>
-              <p class="position">Salesforce Developer</p>
-              <a href="#" class="more-info" onclick="toggleInfo('capgemini')">Click here to know more</a>
+          <div class="col-md-4 mb-4 sr">
+            <div class="card">
+              <div class="card-body">
+                <img src="tcs.png" alt="clg1" class="logo3">
+                <h5 class="card-title text-center">Software Developer</h5>
+                <p class="card-text text-center"><small class="text-muted">December 2020 - January 2022</small></p>
+                <ul class="list-group">
+                  <li class="list-group-item">Analyzed client requirements, identifying the most suitable APIs satisfying business requirements.</li>
+                  <li class="list-group-item">Coded application for Connection Manager features (Wi-Fi, Hotspot, Bluetooth, Android Auto, Apple Car play) in In Vehicle Infotainment using Android Studio and Java.</li>
+                  <li class="list-group-item">Conducted thorough testing based on comprehensive use cases, effectively identifying and addressing bugs in the
+                    early stages of the development lifecycle, resulting in the delivery of high-quality, bug-free software to clients and
+                    saving 50% of time in the development process.</li>
+                  <li class="list-group-item">Regularly participated in Scrum meetings and engaged proactively in team discussions, actively contributing to
+                    resolving uncertainties, JIRA tickets and promoting collaborative problem-solving.</li>
+                  <li class="list-group-item">Proficient in deploying code to Git repositories, ensuring version control and collaborative development by utilizing
+                    Git workflows and best practices</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="tcs-info" class="job-info hidden">
-          <h3>Tata Consultancy Services</h3>
-          <ul>
-            <li>Analyzed client requirements, identifying the most suitable APIs satisfying business requirements.</li>
-            <li>Coded application for Connection Manager features (Wi-Fi, Hotspot, Bluetooth, Android Auto, Apple Car play) in In-Vehicle Infotainment using Android Studio and Java.</li>
-            <li>Conducted thorough testing based on comprehensive use cases, effectively identifying and addressing bugs in the early stages of the development lifecycle, resulting in the delivery of high-quality, bug-free software to clients and saving 50% of time in the development process.</li>
-            <li>Regularly participated in Scrum meetings and engaged proactively in team discussions, actively contributing to resolving uncertainties, JIRA tickets and promoting collaborative problem-solving.</li>
-            <li>Proficient in deploying code to Git repositories, ensuring version control and collaborative development by utilizing Git workflows and best practices.</li>
-          </ul>
-        </div>
-        <div id="capgemini-info" class="job-info hidden">
-          <h3>Capgemini</h3>
-          <ul>
-            <li>Devised the Salesforce Field Service Application integrated with offline Android/IOS/Web application Pulsar by Luminix.</li>
-            <li>Designed and implemented flows, Apex Classes, Process builder, Trigger, report/dashboard to automate business logic, maximizing efficiency and reducing cost by 25%.</li>
-            <li>Led an onshore team of 3 in Agile SDLC initiatives, supervised development, and provided coaching and upskilling for 15 team members.</li>
-            <li>Prepared deployment guidelines document, improving project delivery time by 20% and ensuring timely project delivery.</li>
-            <li>Collaborated with QA team to resolve issues and with the Support team for Production bug fixes and answering user questions, conducting testing, enhancing team productivity and quality.</li>
-          </ul>
+          <div class="col-md-4 mb-4 sr">
+            <div class="card">
+              <div class="card-body">
+                <img src="capgemini.png" alt="clg1" class="logo3">
+                <h5 class="card-title text-center">Salesforce Developer</h5>
+                <p class="card-text text-center"><small class="text-muted">January 2022 - August 2023</small></p>
+                <ul class="list-group">
+                  <li class="list-group-item">Devised the Salesforce Field Service Application integrated with offline Android/IOS/Web application Pulsar by
+                    Luminix.ainment using Android Studio and Java.</li>
+                  <li class="list-group-item">Designed and implemented flows, Apex Classes, Process builder, Trigger, report/dashboard to automate
+                    business logic, maximizingefficiency and reducing cost by 25%</li>
+                  <li class="list-group-item">Strong understanding standard and custom objects with fields associated with.</li>
+                  <li class="list-group-item">Led an onshore team of 3 in Agile SDLC initiatives,supervised development, and provided coaching and upskilling
+                    for 15 team members.</li>
+                  <li class="list-group-item">Prepared deployment guidelines document, improving project delivery time by 20% and ensuring timely project
+                      delivery.</li>
+                  <li class="list-group-item">Collaborated with QA team to resolve issues and with the Support team for Production bug fixes and answering 
+                    user questions, conducting testing, enhancing teamproductivity and quality.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat the above structure for other experiences -->
         </div>
       </div>
     </section>
     
-    
-     
-    
-    <section id="education" class="section">
+    <section id="education" class="section sr">
       <div class="container">
-        <h2>Education</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="education-info" onclick="toggleMap('map1')">
-              <div class="education-entry">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <img src="uab2.png" alt="University Logo 1" class="img-fluid logo">
-                  </div>
-                  <div class="col">
-                    <h3>University of Alabama, Tuscaloosa</h3>
-                    <p>Master of Science in Computer Science and Engineering</p>
-                    <p>GPA: 3.75/4.00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="map1" class="map hidden">
-              <!-- Embed Google Maps directions for Sant Gadge Baba Amravati University -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.8583807097315!2d77.75405751448277!3d30.851620728874067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce40f78d92e5b%3A0xdf0e29abdbae0912!2sSant%20Gadge%20Baba%20Amravati%20University!5e0!3m2!1sen!2sin!4v1649000066040!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+        <h2 class="section-title" style="color: rgb(0, 28, 85);" ><strong>Education Journey</strong></h2>
+        <div class="education-grid">
+          <div class="boxedu">
+            <!-- Bachelor's Degree -->
+            <h4 class="education-title">Bachelor of Engineering</h4>
+            <p class="education-description">Computer Science and Engineering</p>
+            <p class="education-year"><small class="text-muted">August 2014 - June 2018</small></p>
+            <img src="prmitr.jpeg" alt="clg1" class="logo">
           </div>
-          <div class="col-md-6">
-            <div class="education-info" onclick="toggleMap('map2')">
-              <div class="education-entry">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <img src="prmitr.jpeg" alt="universty 2" class="img-fluid logo">
-                  </div>
-                  <div class="col">
-                    <h3>PRMIT&R</h3>
-                    <p>Bachelore of Engineering Computer Science</p>
-                    <p>GPA: 8.62/10.00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="map2" class="map hidden">
-              <!-- Embed Google Maps directions for University of Alabama -->
-              <iframe src="https://www.google.com/maps/dir//Prof.Ram+Meghe+Institute+of+Technology+%26+Research,+Prof.+Ram+Meghe+Square,+Anjangaon+Bari+Rd,+Badnera,+Amravati,+Maharashtra+444701,+India/@20.8546661,77.7496004,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bd6a54e170995cb:0xfed5bd6314ba3973!2m2!1d77.7521349!2d20.8546764?entry=ttu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+          <div class="boxedu"><!-- GIF -->
+            <img src="letadlo_dribbble.gif" alt="Airplane" class="airplane-gif">
           </div>
+          <div class="boxedu">
+            <h4 class="education-title">Master of Science</h4>
+            <p class="education-description">Computer Science</p>
+            <p class="education-year"><small class="text-muted">August 2023 - December 2024</small></p>
+            <img src="uab2.png" alt="University of Alabama at Tuscaloosa" class="logo2">
+          </div>
+          
         </div>
       </div>
     </section>
+    
+    
+  
+    
+    
+    <section id="projects" class="section sr" >
+      <div class="container">
+        <h2 style="color: rgb(0, 28, 85);"><strong>Projects</strong></h2>
+        <p>Building application for IVI for Nissan automotive: Developed a comprehensive weather forecast application that provides detailed 5-day weather forecasts and hourly updates. The another application which includes a robust Connection Manager, ensuring seamless connectivity across Bluetooth, Wi-Fi, Apple CarPlay, and Android Auto.</p>
+        <p>Building application for Abbott laboratories </p>
+        <p>Amazon best seller ranking using web scraping</p>
+        <p>Player ranking system from available dataset</p>
+        <p>Convolutional Neural Network for MNIST dataset</p>
+        <p>Sentiment Anlaysis based on review</p>
         
-    
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <p></p>
-        <!-- Add more content about yourself -->
       </div>
     </section>
+<p></p>
+    <section id="skills-certifications" class="section">
+      <div class="container">
+        <h2 style="color: rgb(0, 28, 85);"><strong>Skills and Certificates</strong></h2>
 
+        <h4> Skills</h4>
+        <div class="skills-grid">
+          <div class="box sr">
+            <img src="DSA.png" alt="Data Structures Logo" >
+            <p>Data Structures & Algorithm</p>
+          </div>
+          <div class="box sr">
+            <img src="java_logo.png" alt="Java Logo" >
+            <p>Java</p>
+          </div>
+          <div class="box sr">
+            <img src="js.png" alt="Js Logo">
+            <p>Javescript</p>
+          </div>
+          <div class="box sr">
+            <img src="html.png" alt="HTML Logo" class="logo4">
+            <p>HTML</p>
+          </div>
+          <div class="box sr">
+            <img src="css.jpg" alt="CSS" class="logo4">
+            <p>CSS</p>
+          </div>
+          <!-- Add more boxes for other skills -->
+          <div class="box sr">
+            <img src="salesforce.jpg" alt="Salesforce Logo" class="logo4">
+            <p>Salesforce</p>
+          </div>
+          <div class="box sr">
+            <img src="lwc.png" alt="LWC Logo" class="logo4">
+            <p>Lightning Web Component</p>
+          </div>
+          <div class="box sr">
+            <img src="apex.png" alt="Apex Logo" class="logo4">
+            <p>Apex</p>
+          </div>
+          <div class="box sr">
+            <img src="dsl.png" alt="fsl Logo" class="logo4">
+            <p>Field Service Lightning </p>
+          </div>
+          <div class="box sr">
+            <img src="sales.jpg" alt="sales Logo" class="logo4">
+            <p>Sales Cloud</p>
+          </div>
+          <div class="box sr">
+            <img src="service.webp" alt="service Logo" class="logo4">
+            <p>Service Cloud </p>
+          </div>
+          <div class="box sr">
+            <img src="sql.jpg" alt="SQL Logo" class="logo4">
+            <p>SQL</p>
+          </div>
+          <div class="box sr">
+            <img src="python.png" alt="Python Logo" class="logo4">
+            <p>Python</p>
+          </div>
+        </div>
+        <p></p>
+        
+        <h4 style="margin-bottom: 30px; margin-top: 30px;"> Certificates</h4>
+        <div class="certificates" style="margin-bottom: 30px;">
+          <div class="certificate">
+            
+            <p><img src="pd1.png" alt="Platform Developer I Certificate Preview"></p>
+            <p>Issuing Authority: Salesforce</p>
+            <a href="Salesforce_Certified_Platform_Developer_I (1).pdf" target="_blank">
+              <strong>Platform Developer I [PD-I]</strong>
+            </a>
+          </div>
 
+          <div class="certificate">
+            
+            <p><img src="admin.png" alt="Salesforce Administrator Certificate Preview"></p>
+            <p>Issuing Authority: Salesforce</p>
+            <a href="Cert4015499_Administrator_20230226 (1).pdf" target="_blank">
+              <strong>Salesforce Administrator [ADM-201]</strong>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+    </section>
+    
 
     <section id="contact" class="section">
       <div class="container">
-        <h2>Contact Me</h2>
-        <form id="contact-form" class="contact-form">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
-              </div>
+          <h2 style="color: rgb(0, 28, 85);"><strong>Contact Me</strong></h2>
+          <center><img src="gifcontact.gif" alt="contact" class="contact-gif"></center>
+          <div class="basic-contact" style="margin-top: 20px;">
+            <div class="contact-heading-div" style="margin-top: 20px;">
+               <p class="contact-header-detail-text" style="color: rgb(127, 141, 170); font-size: 16px; line-height: 1.6; text-align: justify;">I'm accessible through various social media channels. Feel free to drop me a message; I strive to respond within 24 hours. My areas of proficiency cover Salesforce, Salesforce Lightning Web Components (LWC), Salesforce Administration, Salesforce Development, Java Development, Full Stack Development, and Database Management. I'm also enthusiastic about learning new technologies and expanding my skill set. If there's something new on the horizon, count me in for the challenge!</p>
+               
+               <div class="social-media-div" style="margin-top: 20px;">
+                  
+                  <a href="https://www.linkedin.com/in/kalyani-pandharikar" class="icon-button" target="_blank" rel="noopener noreferrer" style="background-color: #0077B5;">
+                    <span name="LinkedIn" class="sc-AxjAm joVFIO"><i class="fab fa-linkedin-in" style="color: #FFFFFF;"></i></span>
+                  </a>
+                  
+                  <a href="mailto:kpandharikarcs@gmail.com" class="icon-button" target="_blank" rel="noopener noreferrer" style="background-color: #DB4437;">
+                    <span name="Gmail" class="sc-AxjAm koLpVp"><i class="fab fa-google" style="color: #FFFFFF;"></i></span>
+                  </a>
+                
+                  <a href="https://www.instagram.com/kalyanipandharikar" class="icon-button" target="_blank" rel="noopener noreferrer" style="background-color: rgb(235, 54, 139);">
+                    <span name="Instagram" class="sc-AxjAm cdEhib"><i class="fab fa-instagram" style="color: #FFFFFF;"></i></span>
+                  </a>
+                  
+                  
+                  <a href="https://www.salesforce.com/trailblazer/kpandharikar" class="icon-button" target="_blank" rel="noopener noreferrer" style="background-color: #00A1E0;">
+                    <span name="Salesforce" class="sc-AxjAm cdEhib"><i class="fab fa-salesforce" style="color: #FFFFFF;"></i></span>
+                  </a>
+                  
+                   
+                  </div>
+                <div class="resume-btn-div" style="margin-top: 60px; margin-bottom: 60px;" >
+                    <div><a class="main-button" href="Kalyani Pandharikar MSCS.pdf" target="_blank" style="color: rgb(237, 249, 254); background-color: rgb(0, 28, 85); border: 1px solid rgb(0, 28, 85); padding: 10px 20px; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;">See My Resume</a></div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+          <!-- <form id="contact-form" class="contact-form" action="send_email.php" method="post">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </section>
+              <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="margin-bottom: 30px;"> Send Message</button>
+          </form>
+          <p></p> -->
+          
+        <div class="address-heading-div">
+          <h1 class="address-heading-text">Location</h1>
+          <p class="address-detail-text">Tuscaloosa, Alabama</p>
+        </div>
     
-    <form id="contact-form" class="contact-form" action="send_email.php" method="post">
+        <div class="map-container">
+          <iframe
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/place/The+University+of+Alabama/@33.211443,-87.5426751,16z/data=!3m1!4b1!4m6!3m5!1s0x888602998cde20bb:0xdf0e29abdbae0912!8m2!3d33.2114385!4d-87.5401002!16zL20vMDF3ZGwz?entry=ttu" allowfullscreen>
+          </iframe>
+      </div>
+  
+      
+    
+         
+  </section>
 
 
-     </main>
+  
+  </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2024 My Portfolio</p>
+      <p>&copy; 2024 Kalyani Portfolio</p>
     </div>
   </footer>
 
@@ -239,7 +381,20 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Custom script -->
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.sr', {
+      delay: 300,
+      distance: '30px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      origin: 'left', // Change origin to left
+      reset: true
+    });
+  </script>
+  
+  
 </body>
 </html>
